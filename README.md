@@ -1,15 +1,18 @@
-# 🌿 MoodMate - AI Mental Health Companion
+# 🌿 MoodMate - Official Landing Page
 
-**Tugas Besar - Pengembangan Startup Digital / UI/UX**
-MoodMate adalah platform kesehatan mental berbasis web yang dirancang untuk menjadi teman cerita digital bagi Gen Z. Fokus utama proyek ini adalah menyediakan ruang aman yang privat, menenangkan, dan mudah diakses.
+**Project Tugas Besar - Pemrograman Berbasis Web (PBW)**
+
+Repository ini berisi source code untuk **Website Profil (Landing Page)** dari startup digital **MoodMate**. Website ini dirancang sebagai portal informasi modern untuk memperkenalkan solusi kesehatan mental berbasis AI kepada pengguna.
+
+🔗 **Live Demo:** [https://moodmate-by-dekingg.vercel.app/](https://moodmate-by-dekingg.vercel.app/)
 
 ---
 
-## 👥 Anggota Kelompok
+## 👥 Anggota Kelompok 1
 
-Proyek ini disusun dan dikembangkan oleh:
+Proyek ini dikembangkan oleh tim MoodMate:
 
-1. **Moch. Sugih Nugraha** (230660121036)
+1. **Moch. Sugih Nugraha** (230660121036) – *Ketua & Frontend Dev*
 2. **Dede Maulana Abdan Syakur** (230660121150)
 3. **Rizky Aditya** (230660121116)
 4. **Adin Setia Mulya** (230660121143)
@@ -17,49 +20,68 @@ Proyek ini disusun dan dikembangkan oleh:
 
 ---
 
-## ✨ Fitur Utama
+## 💻 Tentang Website Ini (Technical Overview)
 
-Aplikasi ini dirancang dengan pendekatan *Emotional Design* untuk mengurangi kecemasan pengguna:
+Website ini dibangun tanpa menggunakan framework berat (seperti React), melainkan menggunakan pendekatan **Vanilla JavaScript** yang dioptimalkan dengan **Vite**. Fokus utamanya adalah performa tinggi, animasi yang halus, dan pengalaman pengguna (*User Experience*) yang premium.
 
-* **🤖 AI Chatbot 24/7:** Teman cerita virtual yang siap mendengarkan keluh kesah kapan saja tanpa menghakimi.
-* **📊 Daily Mood Tracker:** Fitur untuk mencatat dan memantau pola emosi harian pengguna.
-* **🔒 100% Anonim & Privat:** Tidak memerlukan nama asli, memberikan rasa aman dari stigma sosial.
-* **🧘 Audio Terapi:** Kumpulan audio meditasi untuk menenangkan pikiran saat sedang stres atau panik.
-
----
-
-## 🛠️ Teknologi yang Digunakan
-
-Kami menggunakan *Tech Stack* modern yang ringan untuk memastikan performa website maksimal:
-
-* **Bahasa:** HTML5, CSS3 (Modern Variables), JavaScript (ES6+).
-* **Build Tool:** **Vite** (untuk server lokal yang cepat & bundling).
-* **Package Manager:** **NPM** (Node Package Manager).
-* **Animasi UI:** **GSAP (GreenSock)** untuk transisi halaman yang halus.
-* **Smooth Scroll:** **Lenis** untuk pengalaman *scrolling* yang premium.
+### Fitur Unggulan Website (Frontend):
+* 🚀 **High Performance:** Dibangun menggunakan **Vite** untuk loading super cepat.
+* ✨ **Advanced Animations:** Integrasi **GSAP (GreenSock Animation Platform)** untuk transisi elemen yang halus dan interaktif.
+* 🖱️ **Smooth Experience:** Menggunakan **Lenis Scroll** untuk pengalaman *scrolling* yang mewah dan tidak kaku.
+* 📱 **Fully Responsive:** Tampilan adaptif yang sempurna di Laptop, Tablet, maupun Smartphone (*Mobile-First Approach*).
+* 🎨 **Modern UI Design:** Implementasi desain UI/UX yang bersih dengan palet warna psikologi (Sage Green).
 
 ---
 
-## 🚀 Cara Menjalankan Project (Instalasi)
+## 📱 Konsep Startup (Product Context)
 
-Pastikan kamu sudah menginstal **Node.js** di laptopmu. Ikuti langkah berikut untuk menjalankan website ini:
+*Catatan: Bagian ini menjelaskan konsep produk yang dipresentasikan dalam website.*
 
-1.  **Clone / Download Repository ini.**
-2.  **Buka Terminal** (VS Code) di dalam folder project.
-3.  **Install Dependensi:**
-    Ketik perintah berikut untuk mengunduh semua library yang dibutuhkan:
+**MoodMate** adalah konsep aplikasi "AI Mental Health Companion" yang dirancang untuk Gen Z. Website ini memvisualisasikan fitur-fitur utama aplikasi tersebut, antara lain:
+* **AI Chatbot Showcase:** Demonstrasi antarmuka teman cerita virtual.
+* **Mood Tracker UI:** Visualisasi fitur pencatatan emosi harian.
+* **Pricing Section:** Tampilan paket layanan (Freemium & Premium).
+
+---
+
+## 🛠️ Tech Stack
+
+Teknologi yang digunakan dalam pengembangan landing page ini:
+
+* **Core:** HTML5, CSS3 (Modern Variables), JavaScript (ES6+).
+* **Build Tool:** [Vite.js](https://vitejs.dev/)
+* **Animation Library:** [GSAP](https://greensock.com/) & ScrollTrigger.
+* **Smooth Scroll:** [Lenis](https://lenis.studiofreight.com/)
+* **Deployment:** Vercel
+
+---
+
+## 🚀 Cara Menjalankan Project (Installation)
+
+Ikuti langkah ini untuk menjalankan project di komputer lokal:
+
+1.  **Clone Repository:**
+    ```bash
+    git clone [https://github.com/KingTezet/MoodMate-by-Dekingg.git](https://github.com/KingTezet/MoodMate-by-Dekingg.git)
+    ```
+
+2.  **Masuk ke Folder:**
+    ```bash
+    cd MoodMate-by-Dekingg
+    ```
+
+3.  **Install Dependencies:**
     ```bash
     npm install
     ```
+
 4.  **Jalankan Server Lokal:**
-    Setelah instalasi selesai, ketik:
     ```bash
     npm run dev
     ```
-5.  **Buka di Browser:**
-    Klik link yang muncul di terminal (biasanya `http://localhost:5173`).
+    Buka link `http://localhost:5173` di browser kamu.
 
 ---
 
 **© 2025 MoodMate Group Project.**
-*Dibuat untuk memenuhi tugas mata kuliah.*
+*Dibuat dengan ❤️ dan kopi untuk Tugas Besar PBW.*
