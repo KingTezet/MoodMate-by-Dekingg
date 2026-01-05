@@ -1,0 +1,240 @@
+:root {
+  /* PALET WARNA MOODMATE (Warm & Earthy) */
+  --bg: #FDFBF7;       /* Cream Lembut (Background Utama) */
+  --bg2: #F3F0E7;      /* Cream Lebih Gelap (Background Sekunder) */
+  --fg: #2D2420;       /* Cokelat Sangat Tua (Pengganti Hitam) */
+  
+  /* Accent Colors */
+  --accent1: #FF8F5E;  /* Oranye Lembut (Tombol/Highlight) */
+  --accent2: #86A789;  /* Hijau Sage (Ketenangan) */
+  --accent3: #D2E3C8;  /* Hijau Muda (Background Kartu) */
+  --accent4: #4A3B32;  /* Cokelat Tua (Teks Heading) */
+  
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--bg);
+  color: var(--fg);
+  overflow-x: hidden;
+  /* Gunakan Urbanist untuk seluruh body sebagai fallback */
+  font-family: 'Urbanist', sans-serif; 
+}
+
+body::-webkit-scrollbar {
+  width: 0;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* TYPOGRAPHY CONFIGURATION */
+
+h1,
+h2,
+h3 {
+  /* Ganti font "rader" jadi Urbanist */
+  font-family: 'Urbanist', sans-serif;
+  font-weight: 700; /* Bold */
+  font-style: normal; /* Hapus Italic biar lebih clean */
+  line-height: 1.1;
+  color: var(--accent4); /* Warna Cokelat Tua */
+  /* text-transform: uppercase; -> Hapus ini jika ingin huruf besar-kecil normal */
+}
+
+h1 {
+  font-size: 5rem;
+  letter-spacing: -0.02em; /* Sedikit rapat biar modern */
+}
+
+h2 {
+  font-size: 4rem;
+}
+
+h3 {
+  font-size: 2rem;
+}
+
+a {
+  text-decoration: none;
+  color: var(--fg);
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: var(--accent1); /* Hover jadi oranye */
+}
+
+/* PARAGRAF & TEKS KECIL */
+
+p,
+p.ss {
+  /* Ganti font "formula-narrow" jadi Urbanist */
+  font-family: 'Urbanist', sans-serif;
+  font-size: 1.25rem;
+  font-weight: 500; /* Medium */
+  line-height: 1.5; /* Jarak antar baris lebih lega biar enak dibaca */
+  color: var(--fg);
+}
+
+p.mn {
+  /* Ganti font "supply-mono" jadi Urbanist (atau monospace lain jika mau) */
+  font-family: 'Urbanist', sans-serif;
+  text-transform: uppercase;
+  font-size: 0.875rem;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  color: var(--accent4);
+}
+
+/* --- CONTACT CTA (Solid & Clean Stroke) --- */
+
+.contact-cta {
+  position: relative;
+  width: 100vw;
+  height: 50vh; 
+  padding: 2em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+/* Container Tombol */
+.contact-cta .contact-button {
+  position: relative;
+  width: auto; 
+  height: auto;
+  min-width: 220px; /* Lebar minimum biar gak kekecilan */
+  
+  /* Padding tombol */
+  padding: 1.2em 3em; 
+  
+  /* --- STROKE TEBAL TRANSPARAN --- */
+  /* Border 6px, warnanya Hijau Sage dengan transparansi 30% (0.3) */
+  border: 8px solid rgba(134, 167, 137, 0.3); 
+  
+  /* Bentuk Pill/Kapsul */
+  border-radius: 100px; 
+
+  /* --- WARNA SOLID (JANGAN GRADIENT) --- */
+  background: var(--accent2); /* Pakai Hijau Sage Solid */
+  /* Kalau mau oranye, ganti jadi: var(--accent1) */
+  
+  /* Agar background tidak "bocor" ke bawah border transparan */
+  background-clip: padding-box; 
+  
+  /* Flexbox untuk menengahkan teks */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+  /* Transisi halus */
+  transition: all 0.3s ease;
+  
+  /* Shadow tipis aja */
+  box-shadow: 0px 5px 15px rgba(134, 167, 137, 0.2); 
+  
+  cursor: pointer;
+  overflow: hidden;
+}
+
+/* Efek Hover */
+.contact-cta .contact-button:hover {
+  transform: translateY(-5px);
+  /* Saat di-hover, bordernya jadi lebih jelas/tebal warnanya */
+  border-color: rgba(134, 167, 137, 0.6);
+  box-shadow: 0px 15px 30px rgba(134, 167, 137, 0.4);
+}
+
+/* Link di dalam tombol */
+.contact-cta a {
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  z-index: 10;
+}
+
+/* Hapus elemen hiasan template lama */
+.contact-cta .contact-button::before { display: none; }
+.contact-cta .contact-text-small { display: none; }
+
+/* Teks Utama di dalam tombol */
+.contact-cta .contact-text-large h1 {
+  font-size: 1.25rem; 
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: white; /* Teks Putih agar kontras dengan hijau */
+  margin: 0;
+  padding: 0;
+}
+
+/* Responsif */
+@media (max-width: 1000px) {
+  .contact-cta {
+    height: 40vh;
+    padding: 4em 2em;
+  }
+}
+
+/* ANIMATIONS */
+
+@keyframes gradientMove {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+@keyframes stripeMove {
+  0% {
+    transform: translateX(-50%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 1000px) {
+  h1 {
+    font-size: 2.5rem;
+  }
+
+  .contact-cta {
+    height: max-content;
+    padding: 8em 2em;
+  }
+
+  .contact-cta .contact-button {
+    width: 95%;
+    height: 250px;
+    gap: 1em;
+    border-radius: 2em;
+  }
+
+  .contact-cta .contact-text-small {
+    width: 75%;
+    text-align: center;
+  }
+
+  .contact-cta .contact-text-large h1 {
+    font-size: 3rem;
+  }
+}

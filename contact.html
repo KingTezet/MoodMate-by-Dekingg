@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hubungi Kami | MoodMate</title>
+    <link rel="icon" href="/images/global/site-icon.png" />
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="/css/transition.css" />
+    <link rel="stylesheet" href="/css/fonts.css" />
+    <link rel="stylesheet" href="/css/globals.css" />
+    <link rel="stylesheet" href="/css/menu.css" />
+    <link rel="stylesheet" href="/css/contact.css" />
+  </head>
+  <body>
+    <div class="transition">
+      <div class="transition-overlay overlay-1"></div>
+      <div class="transition-overlay overlay-2"></div>
+      <div class="transition-overlay overlay-3"></div>
+      <div class="transition-overlay overlay-4"></div>
+      <div class="transition-overlay overlay-5"></div>
+    </div>
+    <div class="page contact-page">
+      <nav>
+        <div class="logo">
+          <div class="logo-container">
+            <p class="mn"><a href="/">Mood ✦ Mate</a></p>
+          </div>
+        </div>
+      </nav>
+      <section class="contact trail-container">
+        <div class="floating-elements"></div>
+        <div class="contact-left">
+          <div class="contact-card-header-main">
+            <h1>Sapa Kami</h1>
+            <p>
+              Punya pertanyaan seputar aplikasi? Ingin menjalin kerjasama kampus? 
+              Atau sekadar ingin berbagi cerita? Tim MoodMate siap mendengarkan. 
+              Kirim pesanmu, kami akan membalas secepat kilat.
+            </p>
+          </div>
+          <div class="contact-info">
+            <div class="contact-info-item">
+              <p class="label">Email Resmi</p>
+              <p><a href="mailto:hello@moodmate.id" target="_blank">hello@moodmate.id</a></p>
+            </div>
+            <div class="contact-info-item">
+              <p class="label">Media Sosial</p>
+              <p><a href="#" target="_blank">@moodmate.id</a></p>
+            </div>
+          </div>
+        </div>
+        <div class="contact-form-container">
+          <div class="form-header">
+            <h2>Kirim Pesan</h2>
+            <p>Ceritakan apa yang bisa kami bantu</p>
+          </div>
+          <form class="contact-form" id="contactForm">
+            <div class="form-row">
+              <div class="form-group">
+                <input type="text" id="firstName" name="firstName" placeholder="Nama Depan" required>
+                <label for="firstName">Nama Depan</label>
+              </div>
+              <div class="form-group">
+                <input type="text" id="lastName" name="lastName" placeholder="Nama Belakang" required>
+                <label for="lastName">Nama Belakang</label>
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-group">
+                <input type="email" id="email" name="email" placeholder="email@gmail.com" required>
+                <label for="email">Alamat Email</label>
+              </div>
+              <div class="form-group">
+                <input type="tel" id="phone" name="phone" placeholder="0859-2627-0826">
+                <label for="phone">Nomor WhatsApp</label>
+              </div>
+            </div>
+            <div class="form-group full-width">
+              <select id="projectType" name="projectType" required>
+                <option value="">Pilih Topik Pesan</option>
+                <option value="support">Bantuan Aplikasi (Support)</option>
+                <option value="partnership">Kerjasama Kampus / B2B</option>
+                <option value="feedback">Saran & Masukan</option>
+                <option value="media">Pertanyaan Media / Pers</option>
+                <option value="other">Lainnya</option>
+              </select>
+              <label for="projectType">Topik</label>
+            </div>
+            <div class="form-group full-width">
+              <textarea id="message" name="message" placeholder="Tulis pesanmu di sini secara detail..." required></textarea>
+              <label for="message">Isi Pesan</label>
+            </div>
+            <button type="submit" class="submit-btn">
+              Kirim Sekarang
+            </button>
+            <div class="success-message" id="successMessage">
+              <p>Terima kasih! Pesanmu sudah terkirim. Tim MoodMate akan membalas dalam 1x24 jam.</p>
+            </div>
+          </form>
+        </div>
+      </section>
+    </div>
+    <script type="module" src="/js/transition.js"></script>
+    <script type="module" src="/js/contact.js"></script>
+  </body>
+</html>
